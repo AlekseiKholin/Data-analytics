@@ -1,0 +1,10 @@
+# Игнорировать папки site-packages и venv в любом месте проекта
+**/site-packages/
+**/venv/
+**/.venv/
+**/env/
+
+# Временные файлы
+__pycache__/
+.ipynb_checkpoints/
+*.pyc

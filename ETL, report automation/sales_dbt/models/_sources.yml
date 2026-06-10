@@ -1,0 +1,13 @@
+sources:
+  - name: raw
+    database: retail_analytics
+    schema: raw
+    tables:
+      - name: online_retail_raw
+        description: "Сырые данные Online Retail"
+        columns:
+          - name: InvoiceNo
+            description: "Номер инвойса"
+            tests: [not_null] 
+          - name: Revenue
+            tests: [not_null]

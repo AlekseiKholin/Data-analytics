@@ -1,0 +1,28 @@
+models:
+  - name: stg_orders
+    columns:
+      - name: order_id
+        tests: [not_null, unique]
+      - name: order_revenue
+        tests: [not_null]
+      - name: total_quantity
+        tests:
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: 0
+
+  - name: fct_daily_sales
+    tests:
+      - dbt_utils.expression_is_true: { expression: "daily_revenue >= 0" }
+    columns:
+      - name: daily_revenue
+        tests: [not_null]
+
+  - name: fct_customer_metrics
+    columns:
+      - name: customer_id
+        tests: [not_null]  #(клиенты могут быть в разных странах)
+      - name: rfm_segment
+        tests: 
+          - accepted_values: 
+              values: ['Champions', 'Loyal', 'Recent', 'At Risk', 'Regular']

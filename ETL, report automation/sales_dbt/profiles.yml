@@ -1,0 +1,8 @@
+sales_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "../retail_analytics.duckdb"
+      threads: 1
+      schema: analytics
