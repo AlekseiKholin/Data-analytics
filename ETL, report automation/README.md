@@ -80,7 +80,7 @@ DASHBOARD_DAYS=7 python
 
 ## 🌐 [Live Demo Dashboard](https://alekseikholin.github.io/retail_dashboard/)
 
-![retail_dashboard](images/retail_dashboard.png)
+![retail_dashboard](images/retail_dashboard.PNG)
 ---
 
 ## 📊 Дашборд и выходные данные
@@ -153,5 +153,4 @@ sales-etl-pipeline/
 - 📘 [Документация dbt](https://docs.getdbt.com/)
 - ⚙️ [Prefect 2.x Docs](https://docs.prefect.io/)
 - 📈 [Plotly Python](https://plotly.com/python/)
-- 💻 [GitHub Repository](https://github.com/your-username/online-retail-etl) 
 
