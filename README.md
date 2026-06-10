@@ -80,7 +80,7 @@ DASHBOARD_DAYS=7 python
 
 ## 🌐 [Live Demo Dashboard](https://alekseikholin.github.io/retail_dashboard/)
 
-![retail_dashboard](images/retail_dashboard.PNG)
+![retail_dashboard](ETL,%20report%20automation/images/retail_dashboard.PNG)
 ---
 
 ## 📊 Дашборд и выходные данные
